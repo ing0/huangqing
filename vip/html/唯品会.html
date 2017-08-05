@@ -1,0 +1,2283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/唯品会.css">
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/唯品会.js"></script>
+</head>
+<body>
+    <!--导航-->
+    <header>
+         <!--顶部导航-->
+        <div class="nav">
+            <nav class="top-nav">
+                <!--收货地址-->
+                <div class="site">
+                    <div class="site-check"><span>湖北</span> <i></i></div>
+                    <div class="gps">
+                        <div></div>
+                        <h3>请选择所在的收货地区</h3>
+                        <ul>
+                            <li>A <span>安徽</span> <span>澳门</span></li>
+                            <li>B <span>北京</span></li>
+                            <li>C <span>重庆</span> </li>
+                            <li>F <span>福建</span></li>
+                            <li>G <span>广东</span> <span>广西</span> <span>贵州</span> <span>甘肃</span></li>
+                            <li>H <span>河北</span> <span>河南</span> <span>黑龙江</span> <span>海南</span> <span>湖北</span> <span>湖南</span></li>
+                            <li>J <span>江苏</span> <span>吉林</span> <span>江西</span></li>
+                            <li>L <span>辽宁</span> </li>
+                            <li>N <span>内蒙古</span> <span>宁夏</span> </li>
+                            <li>Q <span>青海</span></li>
+                            <li>S <span>上海</span> <span>山东</span> <span>山西</span> <span>四川</span> <span>陕西</span></li>
+                            <li>T <span>台湾</span> <span>天津</span></li>
+                            <li>X <span>西藏</span> <span>香港</span> <span>新疆</span></li>
+                            <li>Y <span>云南</span></li>
+                            <li>Z <span>浙江</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="top-nav-tool">
+                    <li><a href="">请登录</a>
+                        <div class="login">
+                            <span></span>
+                            <div></div>
+                            <p><a href="">您好！ [请登录]</a></p>
+                            <ul>
+                                <li><a href="">我的收藏</a></li>
+                                <li><a href="">我的订单</a></li>
+                                <li><a href="">零钱</a></li>
+                                <li><a href="">我的优惠券</a></li>
+                                <li><a href="">我的唯品币</a></li>
+                                <li><a href="">唯品金融</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="shu">|</li>
+                    <li><a href="">注册</a> </li>
+                    <li class="shu">|</li>
+                    <li><a href="">我的订单</a> </li>
+                    <li class="shu">|</li>
+                    <li class="top-none"><a href="">我的特卖  <i></i> </a>
+                        <ul id="myhot">
+                            <div></div>
+                            <li><a href="">品牌收藏(<span>0</span>)</a></li>
+                            <li><a href="">商品收藏(<span>0</span>)</a></li>
+                            <li><a href="">我的足迹(<span>0</span>)</a></li>
+                        </ul>
+                    </li>
+                    <li class="shu">|</li>
+                    <li class=" top-none"><a href="">会员俱乐部 <i></i></a>
+                        <ul>
+                            <li><a href="">俱乐部首页</a></li>
+                            <li><a href="">唯品币兑换</a></li>
+                            <li><a href="">免费抽大奖</a></li>
+                        </ul>
+                    </li>
+                    <li class="shu">|</li>
+                    <li class="top-none"><a href="">客户服务 <i></i></a>
+                        <ul>
+                            <div></div>
+                            <li><a href="">联系客服</a></li>
+                            <li><a href="">帮助中心</a></li>
+                            <li><a href="">服务中心</a></li>
+                            <li><a href="">知识产权投诉</a></li>
+                        </ul>
+                    </li>
+                    <li class="shu">|</li>
+                    <li><a href=""> <em></em> 手机版</a>
+                        <div>
+                            <div></div>
+                            <a href=""><img src="../img/header/二维码.jpg" width="220px" alt=""></a>
+                            <p><a href="">随时逛 及时抢</a></p>
+                        </div>
+                    </li>
+                    <li class="shu">|</li>
+                    <li><a href="">更多 <i></i></a>
+                        <div>
+                            <span></span>
+                            <div>
+                                <h5>合作专区</h5>
+                                <p>
+                                    <a href="">联名卡申请</a>
+                                    <a href="">唯品卡</a>
+                                    <a href="">支付专区</a>
+                                </p>
+                            </div>
+                            <div>
+                                <h5>关于我们</h5>
+                                <p>
+                                    <a href="">Sell on vip</a>
+                                    <a href="">品牌招商</a>
+                                    <a href="">官方博客</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--顶部logo-->
+        <div class="head-logo">
+            <div class="logo">
+                <div class="head-logo-dop">
+                    <a href=""><img src="../img/header/logo/doplogo.png" alt="" height="100"></a>
+                </div>
+
+                <div class="shop-bags">
+                    <i></i>
+                    <span>我的购物袋</span>
+                    <p><span>0</span></p>
+                    <div class="seclogin">
+                        <p>
+                            好像还未未登陆！<a href="">马上登陆</a> 查看购物袋吧！
+                        </p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="head-vip">
+                    <a href=""><img src="../img/header/logo/100.png" alt="" height="100"></a>
+                    <a href=""><img src="../img/header/logo/7day.png" alt="" height="100"></a>
+                    <a href=""><img src="../img/header/logo/return.png" alt="" height="100"></a>
+                </div>
+            </div>
+        </div>
+
+        <!--菜单导航-->
+        <div class="mainnav">
+            <nav class="main-nav-bg">
+                <ul class="main-nav">
+                    <li><a href="" class="strong">首页</a></li>
+                    <li><a href="" class="strong">唯品国际</a></li>
+                    <li><a href="" class="strong">母婴</a></li>
+                    <li><a href="" class="strong">家居家电</a></li>
+                    <li><a href="">男士</a></li>
+                    <li><a href="">美妆</a></li>
+                    <li><a href="">生活</a></li>
+                    <li><a href="">金融</a></li>
+                    <li><a href="">更多 <i></i></a>
+                        <div class="more">
+                            <a href="">
+                                <img src="../img/header/main-nav/女装.jpg" height="96" width="170"/>
+                                <p>女装</p>
+                                <div class="mask"></div>
+                            </a>
+                            <a href="">
+                                <img src="../img/header/main-nav/鞋包.jpg" height="96" width="170"/>
+                                <p>鞋包</p>
+                                <div class="mask"></div>
+                            </a>
+                            <a href="">
+                                <img src="../img/header/main-nav/配饰.jpg" height="96" width="170"/>
+                                <p>配饰</p>
+                                <div class="mask"></div>
+                            </a>
+                            <a href="">
+                                <img src="../img/header/main-nav/运动.jpg" height="96" width="170"/>
+                                <p>运动</p>
+                                <div class="mask"></div>
+                            </a>
+                            <a href="">
+                                <img src="../img/header/main-nav/爱丽奢.jpg" height="96" width="170"/>
+                                <p>爱丽奢</p>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="main-right"><a href=""><img src="../img/header/main-nav/fication.png" height="32" width="20"/>分类</a></li>
+                    <li class="main-right"><a href=""><img src="../img/header/main-nav/trailer.png" height="32" width="20"/>预告</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   <!-- 主题内容-->
+    <section class="content">
+       <!-- banner轮播-->
+        <div class="banner">
+            <div class="banner-box">
+                <div class="pic-box">
+                    <ul class="banner-pic">
+                        <li><a href=""><img src="../img/主题内容/banner轮播图/轮播素材1.jpg" height="400" width="1146"/></a></li>
+                        <li><a href=""><img src="../img/主题内容/banner轮播图/轮播素材2.jpg" height="400" width="1146"/></a></li>
+                    </ul>
+                    <div id="prv"> < </div>
+                    <div id="next"> > </div>
+                </div>
+                <ul class="selected">
+                    <li>内衣性感出游记</li>
+                    <li>初夏面膜尖货趴</li>
+                </ul>
+                <div class="load"></div>
+            </div>
+        </div>
+        <!--实时热销榜-->
+        <div class="hot">
+            <h2><img src="../img/主题内容/实时热销榜图片/标题.jpg" height="80" width="1170"/></h2>
+            <div class="hotshop">
+                <a href=""><span></span><img src="../img/主题内容/实时热销榜图片/女装.jpg" height="200" width="576"/></a>
+                <a href=""><span></span><img src="../img/主题内容/实时热销榜图片/鞋包.jpg" height="200" width="576"/></a>
+                <a href=""><span></span><img src="../img/主题内容/实时热销榜图片/男装.jpg" height="200" width="279"/></a>
+                <a href=""><span></span><img src="../img/主题内容/实时热销榜图片/个护.jpg" height="200" width="279"/></a>
+                <a href=""><span></span><img src="../img/主题内容/实时热销榜图片/户外.jpg" height="200" width="279"/></a>
+                <a href=""><span></span><img src="../img/主题内容/实时热销榜图片/童装.jpg" height="200" width="279"/></a>
+                <a href=""><span></span><img src="../img/主题内容/实时热销榜图片/配饰.jpg" height="200" width="279"/></a>
+                <a href=""><span></span><img src="../img/主题内容/实时热销榜图片/数码.jpg" height="200" width="279"/></a>
+                <a href=""><span></span><img src="../img/主题内容/实时热销榜图片/家纺.jpg" height="200" width="279"/></a>
+                <a href=""><span></span><img src="../img/主题内容/实时热销榜图片/食品.jpg" height="200" width="279"/></a>
+            </div>
+        </div>
+        <!--新人优选好货-->
+        <div class="new-man">
+            <h3><img src="../img/主题内容/新人优选好货/title.png" height="50" width="1170"/></h3>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="../img/主题内容/新人优选好货/美妆馆.jpg" height="111" width="111"/>
+                        <p>美妆馆</p>
+                    </a>
+                 </li>
+                <li>
+                    <a href="">
+                        <img src="../img/主题内容/新人优选好货/鞋包馆.jpg" height="111" width="111"/>
+                        <p>鞋包馆</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/主题内容/新人优选好货/男装馆.jpg" height="111" width="111"/>
+                        <p>男装馆</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/主题内容/新人优选好货/体用馆.jpg" height="111" width="111"/>
+                        <p>体用馆</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/主题内容/新人优选好货/母婴馆.jpg" height="111" width="111"/>
+                        <p>母婴馆</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/主题内容/新人优选好货/海外尖货.jpg" height="111" width="111"/>
+                        <p>海外尖货</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/主题内容/新人优选好货/人气零食.jpg" height="111" width="111"/>
+                        <p>人气零食</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/主题内容/新人优选好货/更多分类.jpg" height="111" width="111"/>
+                        <p>更多分类</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="close">
+                <a href="">
+                    <img src="../img/主题内容/新人优选好货/close/clothes_bg.jpg" height="366" width="570"/>
+                </a>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="../img/主题内容/新人优选好货/close/clothes_01.jpg" height="68" width="68"/>
+                            <p>连衣裙</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/主题内容/新人优选好货/close/clothes_02.jpg" height="68" width="68"/>
+                            <p>省心套装</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/主题内容/新人优选好货/close/clothes_03.jpg" height="68" width="68"/>
+                            <p>半身裙</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../img/主题内容/新人优选好货/close/clothes_04.jpg" height="68" width="68"/>
+                            <p>春季外套</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="beautyy close">
+                    <a href="">
+                        <img src="../img/主题内容/新人优选好货/beauty/beauty_bg.jpg" height="366" width="570"/>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="../img/主题内容/新人优选好货/beauty/beauty_01.jpg" height="68" width="68"/>
+                                <p>人气彩妆</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../img/主题内容/新人优选好货/beauty/beauty_02.jpg" height="68" width="68"/>
+                                <p>护肤套装</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../img/主题内容/新人优选好货/beauty/beauty_03.jpg" height="68" width="68"/>
+                                <p>口碑面膜</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../img/主题内容/新人优选好货/beauty/beauty_04.jpg" height="68" width="68"/>
+                                <p>清爽水乳</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <!--精选-->
+        <section class="sift flex">
+            <h3 style="border: none"><img src="../img/主题内容/sift精选/today_DDp-title.png" height="68" width="1170"/></h3>
+            
+            <div class="sift-1 str">
+                <a href="" class="filter"><img src="../img/主题内容/sift精选/sift-1/sift_1_bg.jpg" height="350" width="570"/></a>
+                <a href="" class="log">
+                    <img src="../img/主题内容/sift精选/sift-1/primary.png" height="300" width="600"/>
+                    <p>koradior 优雅如你</p>
+                </a>
+                <div class="str-none">
+                    <div class="str-none-top">
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-1/KORADIOR-K14C631707-5.jpg" height="531" width="420"/>
+                            <p>￥199</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-1/KORE-KE3C646707-5.jpg" height="531" width="420"/>
+                            <p>￥296</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-1/K14C631807-5.jpg" height="531" width="420"/>
+                            <p>￥299</p>
+                        </a>
+                    </div>
+                    <div class="str-none-bottom">
+                        <a href=""><img src="../img/主题内容/sift精选/sift-1/primary.png" height="300" width="600"/></a>
+                        <span>
+                            <i data-icon="\e905" class="love"></i>
+                            <span>收藏品牌</span>
+                        </span>
+                        <a href="">进入专场</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sift-2 str">
+                <a href="" class="filter"><img src="../img/主题内容/sift精选/sift-2/sift_2_bg.jpg" height="350" width="570"/></a>
+                <a href="" class="log">
+                    <img src="../img/主题内容/sift精选/sift-2/primary.png" height="300" width="600"/>
+                    <p>低调奢华 时尚优雅</p>
+                </a>
+                <div class="str-none">
+                    <div class="str-none-top">
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-2/JES-T1105239500-5.jpg" height="531" width="420"/>
+                            <p>￥198</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-2/JESDANI-T1105239540-5.jpg" height="531" width="420"/>
+                            <p>￥198</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-2/0a5a40e4-0ac4-4a47-9f7f-6192ff7ffa4a_t.jpg" height="531" width="420"/>
+                            <p>￥198</p>
+                        </a>
+                    </div>
+                    <div class="str-none-bottom">
+                        <a href=""><img src="../img/主题内容/sift精选/sift-2/primary.png" height="300" width="600"/></a>
+                        <span>
+                            <i data-icon="\e905" class="love"></i>
+                            <span>收藏品牌</span>
+                        </span>
+                        <a href="">进入专场</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sift-3 str">
+                <a href="" class="filter"><img src="../img/主题内容/sift精选/sift-3/sift_3_bg.jpg" height="350" width="570"/></a>
+                <a href="" class="log">
+                    <img src="../img/主题内容/sift精选/sift-3/primary.png" height="300" width="600"/>
+                    <p>平衡之道</p>
+                </a>
+                <div class="str-none">
+                    <div class="str-none-top">
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-3/180fdda6-74a4-4ce9-ae80-74d82000366b_t.jpg" height="531" width="420"/>
+                            <p>￥599</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-3/675983f6-f646-47fb-abb5-78676bea84f7_t.jpg" height="531" width="420"/>
+                            <p>￥599</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-3/f9e5ee08-adc9-4c19-96c5-945eddb59fcf_t.jpg" height="531" width="420"/>
+                            <p>￥599</p>
+                        </a>
+                    </div>
+                    <div class="str-none-bottom">
+                        <a href=""><img src="../img/主题内容/sift精选/sift-3/primary.png" height="300" width="600"/></a>
+                        <span>
+                            <i data-icon="\e905" class="love"></i>
+                            <span>收藏品牌</span>
+                        </span>
+                        <a href="">进入专场</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sift-4 str">
+                <a href="" class="filter"><img src="../img/主题内容/sift精选/sift-4/sift_4_bg.jpg" height="350" width="570"/></a>
+                <a href="" class="log">
+                    <img src="../img/主题内容/sift精选/sift-4/primary.png" height="300" width="600"/>
+                    <p>AIMIGAO潮派主义 鞋履尚新</p>
+                </a>
+                <div class="str-none">
+                    <div class="str-none-top">
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-4/3.jpg" height="531" width="420"/>
+                            <p>￥199</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-4/e8e44743-e796-49e8-ac89-4e6770af5cad.jpg" height="531" width="420"/>
+                            <p>￥369</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-4/ebf5e66b-b92a-4632-9a71-2da2651d08ed.jpg" height="531" width="420"/>
+                            <p>￥359</p>
+                        </a>
+                    </div>
+                    <div class="str-none-bottom">
+                        <a href=""><img src="../img/主题内容/sift精选/sift-4/primary.png" height="300" width="600"/></a>
+                        <span>
+                            <i data-icon="\e905" class="love"></i>
+                            <span>收藏品牌</span>
+                        </span>
+                        <a href="">进入专场</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sift-5 str">
+                <a href="" class="filter"><img src="../img/主题内容/sift精选/sift-5/sift_5_bg.jpg" height="350" width="570"/></a>
+                <a href="" class="log">
+                    <img src="../img/主题内容/sift精选/sift-5/primary.png" height="300" width="600"/>
+                    <p>BUGATTI德国品牌 国际品质</p>
+                </a>
+                <div class="str-none">
+                    <div class="str-none-top">
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-5/6cba99ea-42f9-49ce-a255-2215322a309f.jpg" height="531" width="420"/>
+                            <p>￥868</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-5/b61c4583-4dde-4e4d-bd05-678e8e00d218.jpg" height="531" width="420"/>
+                            <p>￥898</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-5/f568ea3b-11ab-43dc-bdd7-913debced7cf.jpg" height="531" width="420"/>
+                            <p>￥1288</p>
+                        </a>
+                    </div>
+                    <div class="str-none-bottom">
+                        <a href=""><img src="../img/主题内容/sift精选/sift-5/primary.png" height="300" width="600"/></a>
+                        <span>
+                            <i data-icon="\e905" class="love"></i>
+                            <span>收藏品牌</span>
+                        </span>
+                        <a href="">进入专场</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sift-6 str">
+                <a href="" class="filter"><img src="../img/主题内容/sift精选/sift-6/sift_6_bg.jpg" height="350" width="570"/></a>
+                <a href="" class="log">
+                    <img src="../img/主题内容/sift精选/sift-6/primary.png" height="300" width="600"/>
+                    <p>初夏户外 搭配首选</p>
+                </a>
+                <div class="str-none">
+                    <div class="str-none-top">
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-6/PM3698010-5.jpg" height="531" width="420"/>
+                            <p>￥189</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-6/PM3707010-5.jpg" height="531" width="420"/>
+                            <p>￥199</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-6/PM3707039-5.jpg" height="531" width="420"/>
+                            <p>￥229</p>
+                        </a>
+                    </div>
+                    <div class="str-none-bottom">
+                        <a href=""><img src="../img/主题内容/sift精选/sift-6/primary.png" height="300" width="600"/></a>
+                        <span>
+                            <i data-icon="\e905" class="love"></i>
+                            <span>收藏品牌</span>
+                        </span>
+                        <a href="">进入专场</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sift-7 str">
+                <a href="" class="filter"><img src="../img/主题内容/sift精选/sift-7/sift_7_bg.jpg" height="350" width="570"/></a>
+                <a href="" class="log">
+                    <img src="../img/主题内容/sift精选/sift-7/primary.png" height="300" width="600"/>
+                    <p>探索永不停止</p>
+                </a>
+                <div class="str-none">
+                    <div class="str-none-top">
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-7/9f7ce625-69d1-4f80-9f32-04d4c8719e91.jpg" height="531" width="420"/>
+                            <p>￥377</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-7/840454ee-cce8-46c5-a1a0-598e9cd3e0b6.jpg" height="531" width="420"/>
+                            <p>￥887</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-7/c1b297fe-74ed-4a9d-997d-e5658ee7ad09.jpg" height="531" width="420"/>
+                            <p>￥595</p>
+                        </a>
+                    </div>
+                    <div class="str-none-bottom">
+                        <a href=""><img src="../img/主题内容/sift精选/sift-7/primary.png" height="300" width="600"/></a>
+                        <span>
+                            <i data-icon="\e905" class="love"></i>
+                            <span>收藏品牌</span>
+                        </span>
+                        <a href="">进入专场</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sift-8 str">
+                <a href="" class="filter"><img src="../img/主题内容/sift精选/sift-8/sift_8_bg.jpg" height="350" width="570"/></a>
+                <a href="" class="log">
+                    <img src="../img/主题内容/sift精选/sift-8/primary.png" height="300" width="600"/>
+                    <p>LONGINES瑞士名表 精选品质</p>
+                </a>
+                <div class="str-none">
+                    <div class="str-none-top">
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-8/75fae4e0-93ee-4eec-b07b-ef266743f7f2.jpg" height="531" width="420"/>
+                            <p>￥8681</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-8/2917d156-0133-4a9a-b066-b65f52527360.jpg" height="531" width="420"/>
+                            <p>￥7404</p>
+                        </a>
+                        <a href="">
+                            <img src="../img/主题内容/sift精选/sift-8/f27c1da0-aa85-44a0-9631-6facb87614b6.jpg" height="531" width="420"/>
+                            <p>￥6043</p>
+                        </a>
+                    </div>
+                    <div class="str-none-bottom">
+                        <a href=""><img src="../img/主题内容/sift精选/sift-8/primary.png" height="300" width="600"/></a>
+                        <span>
+                            <i data-icon="\e905" class="love"></i>
+                            <span>收藏品牌</span>
+                        </span>
+                        <a href="">进入专场</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--女装-->
+        <section class="frock flex">
+            <h3>
+                <img src="../img/主题内容/女装品牌/woman_bg.png" height="43" width="273"/>
+                <a href="">全部女装品牌 <i> > </i></a>
+            </h3>
+            
+            <div class="frock-1 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/女装品牌/frock-1.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.5</span> 折起
+                     果壳GUKOO家居服男女混合专场
+
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="frock-2 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/女装品牌/frock-2.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1</span> 折起
+                    珂莱蒂尔Koradior女装专场
+
+                    <span><i class="time"></i>剩5天</span>
+                </div>
+            </div>
+
+            <div class="frock-3 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/女装品牌/frock-3.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>0.9</span> 折起
+                    丽丽LILY女装专场
+
+                    <span><i class="time"></i>剩4天</span>
+                </div>
+            </div>
+
+            <div class="frock-4 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/女装品牌/frock-4.jpg" height="273" width="570"/>
+                    <p>购物即享折上8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1</span> 折起
+                    ETMA WEEKEND女装专场
+
+                    <span><i class="time"></i>剩5天</span>
+                </div>
+            </div>
+
+            <div class="frock-5 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/女装品牌/frock-5.jpg" height="273" width="570"/>
+                    <p>购物即享折上8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1</span> 折起
+                    ETAM&E&JOY BY ETAM女装混合专场
+
+                    <span><i class="time"></i>剩5天</span>
+                </div>
+            </div>
+
+            <div class="frock-6 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/女装品牌/frock-6.jpg" height="273" width="570"/>
+                    <p>购物即享折上8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>0.6</span> 折起
+                    萨拉迪恩Sarah Dean女装连衣裙专场
+
+                    <span><i class="time"></i>剩5天</span>
+                </div>
+            </div>
+
+            <div class="frock-7 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/女装品牌/frock-7.jpg" height="273" width="570"/>
+                    <p>购物即享折上8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.4</span> 折起
+                    韩都衣舍Hstyle女装潮玩专场
+
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="frock-8 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/女装品牌/frock-8.jpg" height="273" width="570"/>
+                    <p>购物即享折上8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.4</span> 折起
+                    Amii女装专场
+
+                    <span><i class="time"></i>剩5天</span>
+                </div>
+            </div>
+
+            <div class="more-brand">
+                <a href=""><span>更多女装品牌</span> <i></i> </a>
+            </div>
+        </section>
+
+        <!--中间插入广告-->
+        <div class="fashion">
+            <div class="VIPLUX">
+                <div class="lux">
+                    <div class="luxborder">
+                        <div class="luxborder-top"></div>
+                        <div class="luxborder-bottom"></div>
+                        <div class="luxborder-left"></div>
+                        <div class="luxborder-right"></div>
+                    </div>
+                    <div class="luxlogo"></div>
+                    <p>轻奢大牌 时尚臻品</p>
+                    <a href="">进入频道 <span> > </span></a>
+                </div>
+            </div>
+        </div>
+
+        <!--鞋包-->
+        <section class="shoes flex">
+            <h3>
+                <img src="../img/主题内容/鞋包/shoes.png" height="43" width="273"/>
+                <a href="">全部鞋包品牌 <i> > </i></a>
+            </h3>
+
+            <div class="shoes-1 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/鞋包/shoes-1.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>2.2</span> 折起
+                    康奈KANGNAI女鞋专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="shoes-2 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/鞋包/shoes-2.jpg" height="273" width="570"/>
+                    <p>购物即享折上8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>0.9</span> 折起
+                    骆驼牌男女鞋混合专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="shoes-3 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/鞋包/shoes-3.jpg" height="273" width="570"/>
+                    <p>购物即享折上8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.2</span> 折起
+                    骆驼CAMEL男鞋专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+
+            <div class="shoes-4 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/鞋包/shoes-4.jpg" height="273" width="570"/>
+                    <p>购物即享折上8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.9</span> 折起
+                    意尔康Yearcon男鞋专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="shoes-5 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/鞋包/shoes-5.jpg" height="273" width="570"/>
+                    <p>购物即享折上8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>0.7</span> 折起
+                    原创品牌-Ggirl箱包专场
+                    <span><i class="time"></i>剩10天</span>
+                </div>
+            </div>
+
+            <div class="shoes-6 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/鞋包/shoes-6.jpg" height="273" width="570"/>
+                    <p>购物即享折上8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>2.7</span> 折起
+                    马克华菲Mark Fairwhale男女鞋混合专场
+                    <span><i class="time"></i>剩6天</span>
+                </div>
+            </div>
+
+            <div class="shoes-7 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/鞋包/shoes-7.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span></span>
+                    五一狂欢-人气鞋包
+                    <span><i class="time"></i>剩1天</span>
+                </div>
+            </div>
+
+            <div class="shoes-8 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/鞋包/shoes-8.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span></span>
+                    五一狂欢-型男鞋包
+                    <span><i class="time"></i>剩1天</span>
+                </div>
+            </div>
+
+            <div class="more-brand">
+                <a href=""><span>更多鞋包品牌</span> <i></i> </a>
+            </div>
+
+        </section>
+        <!--男士-->
+        <section class="man flex">
+            <h3>
+                <img src="../img/主题内容/男士/men.png" height="43" width="248"/>
+                <a href="">全部男士品牌 <i> > </i></a>
+            </h3>
+
+            <div class="man-1 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/男士/man-1.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>6.1</span> 折起
+                    苹果APPLE平板专场
+                    <span><i class="time"></i>剩22时</span>
+                </div>
+            </div>
+
+            <div class="man-2 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/男士/man-2.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>6.2</span> 折起
+                    苹果APPLE专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="man-3 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/男士/man-3.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>4.6</span> 折起
+                    匡威converse 经典潮鞋专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+
+            <div class="man-4 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/男士/man-4.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>7.6</span> 折起
+                    苹果APPLE数码专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="man-5 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/男士/man-5.jpg" height="273" width="570"/>
+                    <p>购物即享折上8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>9.3</span> 折起
+                    小米MI手机专场
+                    <span><i class="time"></i>剩2天</span>
+                </div>
+            </div>
+
+            <div class="man-6 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/男士/man-6.jpg" height="273" width="570"/>
+                    <p>购物即享折上8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>6.9</span> 折起
+                    华为HUAWEI手机套餐专场
+                    <span><i class="time"></i>剩8天</span>
+                </div>
+            </div>
+
+            <div class="man-7 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/男士/man-7.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1</span> 折起
+                    马克华菲Mark Fairwhale JEANS男装专场
+                    <span><i class="time"></i>剩1天</span>
+                </div>
+            </div>
+
+            <div class="man-8 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/男士/man-8.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>9.2</span> 折起
+                    OPPO手机专场
+                    <span><i class="time"></i>剩1天</span>
+                </div>
+            </div>
+
+            <div class="more-brand">
+                <a href=""><span>更多男士品牌</span> <i></i> </a>
+            </div>
+
+        </section>
+        <!--运动-->
+        <section class="sport flex">
+            <h3>
+                <img src="../img/主题内容/运动/sport.png" height="43" width="248"/>
+                <a href="">全部运动品牌 <i> > </i></a>
+            </h3>
+
+            <div class="sport-1 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/运动/sport-1.jpg" height="273" width="570"/>
+                    <p>满498减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>3.6</span> 折起
+                    Nike运动新品男士专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="sport-2 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/运动/sport-2.jpg" height="273" width="570"/>
+                    <p>满498减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>5</span> 折起
+                    adidas新品潮流男士专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="sport-3 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/运动/sport-3.jpg" height="273" width="570"/>
+                    <p>满498减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>6</span> 折起
+                    adidas 三叶草新潮鞋服专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+
+            <div class="sport-4 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/运动/sport-4.jpg" height="273" width="570"/>
+                    <p>满498减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>6.9</span> 折起
+                    adidas neo潮流新品专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="sport-5 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/运动/sport-5.jpg" height="273" width="570"/>
+                    <p>满498减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>4.6</span> 折起
+                    运动潮童混合专场-Nike&Adidas&PUMA& Onitsuka Tiger
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="sport-6 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/运动/sport-6.jpg" height="273" width="570"/>
+                    <p>满498减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>6</span> 折起
+                    New Balance潮型运动新品专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="sport-7 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/运动/sport-7.jpg" height="273" width="570"/>
+                    <p>满498减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>4.4</span> 折起
+                    PUMA街头潮流运动新品专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="sport-8 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/运动/sport-8.jpg" height="273" width="570"/>
+                    <p>满498减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>5.5</span> 折起
+                    Onitsuka Tiger运动休闲鞋专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="more-brand">
+                <a href=""><span>更多运动品牌</span> <i></i> </a>
+            </div>
+        </section>
+        <!--饰品-->
+        <section class="jewelry flex">
+            <h3>
+                <img src="../img/主题内容/饰品/watch.png" height="43" width="248"/>
+                <a href="">全部饰品品牌 <i> > </i></a>
+            </h3>
+
+            <div class="jewelry-1 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/饰品/watch-1.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>171</span> 元起
+                    周大福CHOW TAI FOOK珠宝专场
+                    <span><i class="time"></i>剩22时</span>
+                </div>
+            </div>
+
+            <div class="jewelry-2 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/饰品/watch-2.jpg" height="273" width="570"/>
+                    <p>购物即享8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1</span> 折起
+                    william&kate帽子专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="jewelry-3 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/饰品/watch-3.jpg" height="273" width="570"/>
+                    <p>满398减80，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>0.2</span> 折起
+                    一品翠玉器专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+
+            <div class="jewelry-4 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/饰品/watch-4.jpg" height="273" width="570"/>
+                    <p>购物满2件免1件</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.1</span> 折起
+                    rena chris发饰专场
+                    <span><i class="time"></i>剩4天</span>
+                </div>
+            </div>
+
+            <div class="jewelry-5 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/饰品/watch-5.jpg" height="273" width="570"/>
+                    <p>满800减600，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>4.6</span> 折起
+                    萃华CUI HUA珠宝专场
+                    <span><i class="time"></i>剩5天</span>
+                </div>
+            </div>
+
+            <div class="jewelry-6 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/饰品/watch-6.jpg" height="273" width="570"/>
+                    <p>满498减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>0.9</span> 折起
+                    MKMJ袜子专场
+                    <span><i class="time"></i>剩2天</span>
+                </div>
+            </div>
+
+            <div class="jewelry-7 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/饰品/watch-7.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>9</span> 折起
+                    周生生点睛品专场
+                    <span><i class="time"></i>剩2天</span>
+                </div>
+            </div>
+
+            <div class="jewelry-8 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/饰品/watch-8.jpg" height="273" width="570"/>
+                    <p>满298减60，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>0.9</span> 折起
+                    special饰品专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="more-brand">
+                <a href=""><span>更多饰品品牌</span> <i></i> </a>
+            </div>
+        </section>
+        <!--美妆-->
+        <section class="beauty flex">
+            <h3>
+                <img src="../img/主题内容/美妆/beauty.png" height="43" width="248"/>
+                <a href="">全部美妆品牌 <i> > </i></a>
+            </h3>
+
+            <div class="beauty-1 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/美妆/beauty-1.jpg" height="273" width="570"/>
+                    <p>满200减50，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>3.9</span> 折起
+                    美宝莲Maybelline化妆品专场
+                    <span><i class="time"></i>剩2天</span>
+                </div>
+            </div>
+
+            <div class="beauty-2 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/美妆/beauty-2.jpg" height="273" width="570"/>
+                    <p>满199减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>5</span> 折起
+                    沙宣VS洗护发专场
+                    <span><i class="time"></i>剩2天</span>
+                </div>
+            </div>
+
+            <div class="beauty-3 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/美妆/beauty-3.jpg" height="273" width="570"/>
+                    <p>满200减50，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>3.5</span> 折起
+                    蜜丝佛陀MAX FACTOR彩妆专场
+                    <span><i class="time"></i>剩2天</span>
+                </div>
+            </div>
+
+
+            <div class="beauty-4 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/美妆/beauty-4.jpg" height="273" width="570"/>
+                    <p>满200减50，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>3.4</span> 折起
+                    卡姿兰Carslan彩妆专场
+                    <span><i class="time"></i>剩2天</span>
+                </div>
+            </div>
+
+            <div class="beauty-5 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/美妆/beauty-5.jpg" height="273" width="570"/>
+                    <p>满199减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>6.8</span> 折起
+                    宝洁旗下品牌洗护发专场
+                    <span><i class="time"></i>剩2天</span>
+                </div>
+            </div>
+
+            <div class="beauty-6 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/美妆/beauty-6.jpg" height="273" width="570"/>
+                    <p>满200减50，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>3.4</span> 折起
+                    玛丽黛佳Marie Dalgar彩妆专场
+                    <span><i class="time"></i>剩2天</span>
+                </div>
+            </div>
+
+            <div class="beauty-7 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/美妆/beauty-7.jpg" height="273" width="570"/>
+                    <p>购物满指定金额即送相应礼品，数量有限，送完即止</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>3.3</span> 折起
+                    THE HISTORY OF WHOO化妆品专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="beauty-8 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/美妆/beauty-8.jpg" height="273" width="570"/>
+                    <p>购物满420/599元即送相应礼品，数量有限，送完即止</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>3.8</span> 折起
+                    兰芝Laneige化妆品专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="more-brand">
+                <a href=""><span>更多美妆品牌</span> <i></i> </a>
+            </div>
+        </section>
+        <!--母婴-->
+        <section class="infant flex">
+            <h3>
+                <img src="../img/主题内容/母婴/infant.png" height="43" width="248"/>
+                <a href="">全部母婴品牌 <i> > </i></a>
+            </h3>
+
+            <div class="infant-1 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/母婴/infant-1.jpg" height="273" width="570"/>
+                    <p>购物即享8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>2</span> 折起
+                    马骑顿MQD男童专场
+                    <span><i class="time"></i>剩21时</span>
+                </div>
+            </div>
+
+            <div class="infant-2 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/母婴/infant-2.jpg" height="273" width="570"/>
+                    <p>购物满2件即享7.5折，满3件即享6.5折</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.7</span> 折起
+                    小素材Small Material婴童服饰专场
+                    <span><i class="time"></i>剩5天</span>
+                </div>
+            </div>
+
+            <div class="infant-3 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/母婴/infant-3.jpg" height="273" width="570"/>
+                    <p>满899减30，满1899减100</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>3.1</span> 折起
+                    好孩子Goodbaby婴儿推车直发货专场
+                    <span><i class="time"></i>剩4天</span>
+                </div>
+            </div>
+
+
+            <div class="infant-4 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/母婴/infant-4.jpg" height="273" width="570"/>
+                    <p>满199减50，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.6</span> 折起
+                    布布发现女童专场
+                    <span><i class="time"></i>剩5天</span>
+                </div>
+            </div>
+
+            <div class="infant-5 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/母婴/infant-5.jpg" height="273" width="570"/>
+                    <p>满199减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.5</span> 折起
+                    母婴用品清仓199-100专场
+                    <span><i class="time"></i>剩10天</span>
+                </div>
+            </div>
+
+            <div class="infant-6 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/母婴/infant-6.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>4.5</span> 折起
+                    妈咪宝贝MamyPoko纸尿裤专场
+                    <span><i class="time"></i>剩2天</span>
+                </div>
+            </div>
+
+            <div class="infant-7 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/母婴/infant-7.jpg" height="273" width="570"/>
+                    <p>满118减30，满198减60</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.4</span> 折起
+                    小富兰克SmallFranck婴儿服饰用品专场
+                    <span><i class="time"></i>剩21时</span>
+                </div>
+            </div>
+
+            <div class="infant-8 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/母婴/infant-8.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>0.7</span> 折起
+                    59元封顶-苏黎世家sulisi homewear舒适居家服专场
+                    <span><i class="time"></i>剩5天</span>
+                </div>
+            </div>
+
+            <div class="more-brand">
+                <a href=""><span>更多母婴品牌</span> <i></i> </a>
+            </div>
+        </section>
+        <!--居家-->
+        <section class="home flex">
+            <h3>
+                <img src="../img/主题内容/居家/home.png" height="43" width="248"/>
+                <a href="">全部居家品牌 <i> > </i></a>
+            </h3>
+
+            <div class="home-1 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/居家/home-1.jpg" height="273" width="570"/>
+                    <p>满398减80，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>0.7</span> 折起
+                    61年匠心缔造梦洁家纺
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="home-2 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/居家/home-2.jpg" height="273" width="570"/>
+                    <p>满498减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>2</span> 折起
+                    满498减100，上不封顶
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="home-3 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/居家/home-3.jpg" height="273" width="570"/>
+                    <p>满498减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.3</span> 折起
+                    多喜爱Dohia家纺专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+
+            <div class="home-4 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/居家/home-4.jpg" height="273" width="570"/>
+                    <p>满498减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.8</span> 折起
+                    罗莱家纺婚庆专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="home-5 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/居家/home-5.jpg" height="273" width="570"/>
+                    <p>购物即享8.8折优惠</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>0.9</span> 折起
+                    H&3家居用品专场
+                    <span><i class="time"></i>剩21时</span>
+                </div>
+            </div>
+
+            <div class="home-6 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/居家/home-6.jpg" height="273" width="570"/>
+                    <p>满498减50，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.1</span> 折起
+                    柠檬树时尚家居专场
+                    <span><i class="time"></i>剩6天</span>
+                </div>
+            </div>
+
+            <div class="home-7 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/居家/home-7.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1299</span> 元起
+                    海尔Haier冰洗空专场直发货
+                    <span><i class="time"></i>剩6天</span>
+                </div>
+            </div>
+
+            <div class="home-8 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/居家/home-8.jpg" height="273" width="570"/>
+                    <p>满498减100，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.2</span> 折起
+                    罗莱旗下LOVO家纺专场
+                    <span><i class="time"></i>剩5天</span>
+                </div>
+            </div>
+
+            <div class="more-brand">
+                <a href=""><span>更多居家品牌</span> <i></i> </a>
+            </div>
+        </section>
+        <!--国际-->
+        <section class="internation flex">
+            <h3>
+                <img src="../img/主题内容/国际/internation.png" height="43" width="248"/>
+                <a href="">全部国际品牌 <i> > </i></a>
+            </h3>
+
+            <div class="internation-1 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/国际/internation-1.jpg" height="273" width="570"/>
+                    <p>免邮包税</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>4.9</span> 折起
+                    日本MERRIES花王婴儿纸尿裤海外专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="internation-2 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/国际/internation-2.jpg" height="273" width="570"/>
+                    <p>免邮包税</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>3.9</span> 折起
+                    韩国春雨润肤专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="internation-3 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/国际/internation-3.jpg" height="273" width="570"/>
+                    <p>免税包邮</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>4.3</span> 折起
+                    韩国IT°S SKIN伊思护肤品专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+
+            <div class="internation-4 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/国际/internation-4.jpg" height="273" width="570"/>
+                    <p>免邮包税</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>6.7</span> 折起
+                    澳洲Aptamil爱他美奶粉海外专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="internation-5 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/国际/internation-5.jpg" height="273" width="570"/>
+                    <p>免邮包税</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.5</span> 折起
+                    韩国九朵云马油专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="internation-6 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/国际/internation-6.jpg" height="273" width="570"/>
+                    <p>免邮包税</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>1.3</span> 折起
+                    日本大王Goo.n婴儿纸尿裤海外专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="internation-7 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/国际/internation-7.jpg" height="273" width="570"/>
+                    <p>免邮包税</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>5.6</span> 折起
+                    MEDIHEAL/美迪惠尔(原可莱丝)面膜专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="internation-8 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/国际/internation-8.jpg" height="273" width="570"/>
+                    <p>免税包邮</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>2</span> 折起
+                    Philips科技缔美新生活专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="more-brand">
+                <a href=""><span>更多国际品牌</span> <i></i> </a>
+            </div>
+        </section>
+        <!--生活-->
+        <section class="life flex">
+            <h3>
+                <img src="../img/主题内容/生活/life.png" height="43" width="248"/>
+                <a href="">全部生活品牌 <i> > </i></a>
+            </h3>
+
+            <div class="life-1 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/生活/life-1.jpg" height="273" width="570"/>
+                    <p>满159减10，满229减20</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>2.3</span> 折起
+                    耐威克爱宠食品用品专场
+                    <span><i class="time"></i>剩3天</span>
+                </div>
+            </div>
+
+            <div class="life-2 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/生活/life-2.jpg" height="273" width="570"/>
+                    <p>满99减15，上不封顶</p>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>2.9</span> 折起
+                    fove精品曲奇专场
+                    <span><i class="time"></i>剩28天</span>
+                </div>
+            </div>
+
+            <div class="life-3 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/生活/life-3.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>2.4</span> 折起
+                    八马茶具专场
+                    <span><i class="time"></i>剩58天</span>
+                </div>
+            </div>
+
+
+            <div class="life-4 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/生活/life-4.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>5.4</span> 折起
+                    昆仑黑枸杞 雪域秘境之选专场
+                    <span><i class="time"></i>剩23天</span>
+                </div>
+            </div>
+
+            <div class="life-5 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/生活/life-5.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>5.4</span> 折起
+                    舌尖上的波斯美食
+                    <span><i class="time"></i>剩58天</span>
+                </div>
+            </div>
+
+            <div class="life-6 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/生活/life-6.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span></span>
+                    沃隆每日坚果专场
+                    <span><i class="time"></i>剩28天</span>
+                </div>
+            </div>
+
+            <div class="life-7 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/生活/life-7.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>19</span> 元起
+                    中粮山萃专场
+                    <span><i class="time"></i>剩28天</span>
+                </div>
+            </div>
+
+            <div class="life-8 flex-box">
+                <a href="">
+                    <img src="../img/主题内容/生活/life-8.jpg" height="273" width="570"/>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    <span>6.3</span> 折起
+                    汪裕泰茶叶专场
+                    <span><i class="time"></i>剩58天</span>
+                </div>
+            </div>
+
+            <div class="more-brand">
+                <a href=""><span>更多生活品牌</span> <i></i> </a>
+            </div>
+        </section>
+        <!--预告-->
+        <section class="foreshow flex">
+            <h3><img src="../img/主题内容/预告/tomorrow.png" height="68" width="1170"/></h3>
+
+            <div class="flex-box fore">
+                <a href="">
+                    <img src="../img/主题内容/预告/foreshow-1.jpg" height="153" width="320"/>
+                    <p>满268减50，上不封顶</p>
+                    <div class="first">抢先挑好货 > </div>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    金狐狸FOXER男女包混合专场
+                </div>
+
+            </div>
+
+            <div class="flex-box fore">
+                <a href="">
+                    <img src="../img/主题内容/预告/foreshow-2.jpg" height="153" width="320"/>
+                    <p>满268减50，上不封顶</p>
+                    <div class="first">抢先挑好货 > </div>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    皮尔·卡丹PIERRECARDIN-男鞋专场
+                </div>
+            </div>
+
+            <div class="flex-box fore">
+                <a href="">
+                    <img src="../img/主题内容/预告/foreshow-3.jpg" height="153" width="320"/>
+                    <p>满268减50，上不封顶</p>
+                    <div class="first">抢先挑好货 > </div>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    欧伦堡OLUNPO男鞋专场
+                </div>
+            </div>
+
+            <div class="flex-box fore">
+                <a href="">
+                    <img src="../img/主题内容/预告/foreshow-4.jpg" height="153" width="320"/>
+                    <p>满268减50，上不封顶</p>
+                    <div class="first">抢先挑好货 > </div>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    圣大保罗SANTABARBARAPOLO男女包混合专场
+                </div>
+            </div>
+
+            <div class="flex-box fore">
+                <a href="">
+                    <img src="../img/主题内容/预告/foreshow-5.jpg" height="153" width="320"/>
+                    <p>满268减50，上不封顶</p>
+                    <div class="first">抢先挑好货 > </div>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    斯提亚STIYA男女箱包专场
+                </div>
+            </div>
+
+            <div class="flex-box fore">
+                <a href="">
+                    <img src="../img/主题内容/预告/foreshow-6.jpg" height="153" width="320"/>
+                    <p>满268减50，上不封顶</p>
+                    <div class="first">抢先挑好货 > </div>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    歌斯东尼GASTONELUCIOLI&诗兰柏高SLBG混合女鞋专场
+                </div>
+            </div>
+
+            <div class="flex-box fore">
+                <a href="">
+                    <img src="../img/主题内容/预告/foreshow-7.jpg" height="153" width="320"/>
+                    <p>满268减50，上不封顶</p>
+                    <div class="first">抢先挑好货 > </div>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    色非女鞋专场
+                </div>
+            </div>
+
+            <div class="flex-box fore">
+                <a href="">
+                    <img src="../img/主题内容/预告/foreshow-8.jpg" height="153" width="320"/>
+                    <p>满268减50，上不封顶</p>
+                    <div class="first">抢先挑好货 > </div>
+                </a>
+                <span class="coll">
+                    <i class="love"></i>
+                    <span>收藏品牌</span>
+                </span>
+                <div class="flex-title">
+                    卡芙琳CAERPHILLY女鞋专场
+                </div>
+            </div>
+
+            <div class="more-brand">
+                <a href=""><span>查看跟多预告</span> <i></i> </a>
+            </div>
+        </section>
+    </section>
+    <!--页脚-->
+    <footer>
+        <div class="footer-inner">
+            <!--服务优势-->
+            <ul class="ft-vip">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <!--服务菜单-->
+            <div class="ft-list">
+                <dl class="list">
+                    <dt>服务保障</dt>
+                    <dd><a href="">正品保证</a></dd>
+                    <dd><a href="">7天无理由退换</a></dd>
+                    <dd><a href="">退货返运费</a></dd>
+                    <dd><a href="">7x15小时客户服务</a> </dd>
+                </dl>
+                <dl class="list">
+                    <dt>购物指南</dt>
+                    <dd><a href="">导购演示</a></dd>
+                    <dd><a href="">订单操作</a></dd>
+                    <dd><a href="">会员注册</a></dd>
+                    <dd><a href="">账户管理</a> </dd>
+                    <dd><a href="">收货样品</a> </dd>
+                    <dd><a href="">会员等级</a> </dd>
+                </dl>
+                <dl class="list">
+                    <dt>支付方式</dt>
+                    <dd><a href="">快捷支付</a></dd>
+                    <dd><a href="">23家主流网银支付</a></dd>
+                    <dd><a href="">货到付款</a></dd>
+                    <dd><a href="">支付宝，银联等支付</a> </dd>
+                    <dd><a href="">信用卡支付</a> </dd>
+                    <dd><a href="">零钱支付</a> </dd>
+                </dl>
+                <dl class="list">
+                    <dt>配送方式</dt>
+                    <dd><a href="">全场满288元免运费</a></dd>
+                    <dd><a href="">配送范围及运费</a></dd>
+                    <dd><a href="">验货与签收</a></dd>
+                </dl>
+                <dl class="list">
+                    <dt>售后服务</dt>
+                    <dd><a href="">退货政策</a></dd>
+                    <dd><a href="">退货流程</a></dd>
+                    <dd><a href="">退款方式和时效</a></dd>
+                </dl>
+                <dl class="app">
+                    <dt>唯品会二维码</dt>
+                    <dd><img src="../img/footer/page_bottom_dl_n.png" height="100" width="100"/></dd>
+                    <dd>下载唯品会移动APP</dd>
+                </dl>
+            </div>
+            <!--版权及信息-->
+            <div class="ft-infor">
+                <div class="info-link">
+                    <a href="">关于我们</a>|
+                    <a href="">About us</a>|
+                    <a href="">Investor Relations</a>|
+                    <a href="">媒体报道</a>|
+                    <a href="">品牌寨上</a>|
+                    <a href="">隐私条款</a>|
+                    <a href="">唯品诚聘</a>|
+                    <a href="">365爱心基金</a>|
+                    <a href="">唯品卡</a>|
+                    <a href="">唯品地图</a>|
+                    <a href="">品牌大全</a>|
+                    <a href="">联系我们</a>
+                </div>
+                <p>Copyright © 2008-2017 vip.com，All Rights Reserved  使用本网站即表示接受唯品会用户协议。版权所有 广州唯品会信息科技有限公司</p>
+                <p>粤公网安备 44010302111111号  粤ICP备08114786号 ICP经营许可证：粤B2-20080329 网络文化经营许可证：粤网文〔2015〕1528-229</p>
+                <p>自营主体的营业执照及食品流通许可证信息  互联网药品交易服务资格证（粤C20140002）</p>
+            </div>
+        </div>
+    </footer>
+    <article>
+        <ul class="lift">
+           <li><i></i><span>精选</span></li>
+           <li><i></i><span>女装</span></li>
+           <li><i></i><span>鞋包</span></li>
+           <li><i></i><span>男士</span></li>
+           <li><i></i><span>运动</span></li>
+           <li><i></i><span>饰品</span></li>
+           <li><i></i><span>美妆</span></li>
+           <li><i></i><span>母婴</span></li>
+           <li><i></i><span>居家</span></li>
+           <li><i></i><span>国际</span></li>
+           <li><i></i><span>生活</span></li>
+           <li><i></i><span>预告</span></li>
+        </ul>
+    </article>
+    <section class="fixed-right">
+        <div class="top">
+            <div class="username"><i></i>账号
+                <div class="login2">
+                    <a href="" class="head"><img src="../img/右方固定栏/my_cnt_pic.jpg" height="66" width="66"/></a>
+                    <p>你好！请 <a href="">登录</a> | <a href="">注册</a></p>
+                    <div>
+                        <div><i></i>
+                            <p>我的订单</p>
+                        </div>
+                        <div><i></i>
+                            <p>我的消息</p>
+                        </div>
+                    </div>
+                    <p><a href="">会员俱乐部</a></p>
+                </div>
+            </div>
+            <div class="bags"><i></i>
+                <p>购物袋</p>
+                <div><span>0</span></div>
+            </div>
+            <div class="col-none"><i></i>
+                <p class="none">我的优惠券</p>
+            </div>
+            <div class="col-none"><i></i>
+                <p class="none">品牌收藏</p>
+            </div>
+            <div class="col-none"><i></i>
+                <p class="none">商品收藏</p>
+            </div>
+            <div class="col-none"><i></i>
+                <p class="none">我的足迹</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="col-none"><i></i>
+                <p class="none">会员反馈</p>
+            </div>
+            <div class="col-none body-top"><i></i>
+                <p class="none">返回顶部</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
