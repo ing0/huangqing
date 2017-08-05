@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" >
+        $(function(){
+            $(".ul-right li").hover(function(){
+                $(this).addClass("current")
+                $(this).siblings().removeClass("current")
+            },function(){
+//                $(this).removeClass("current")
+            })
+            $(".ul-right li").click(function(){
+                $(this).addClass("current")
+                $(this).siblings().removeClass("current")
+            })
+            $(".ul-right li").click(function(){
+                $(this).css({"outline":"none"})
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="top-nav">
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-header collapse navbar-collapse">
+                <span class="input-group ">
+                    <input type="text" class="form-control ">
+                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                </span>
+            </div>
+            <ul class="nav navbar-nav collapse navbar-collapse " id="color">
+                <li><a href="#"><span class="glyphicon glyphicon-list">发现</span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-edit">话题</span></a></li>
+            </ul>
+             <span class=" navbar-right denglu">
+                <a href="#" class=" btn btn-success " id="login" data-toggle="modal" data-target="#modal" >登录</a>
+                <a href="#" class=" btn btn-primary">注册</a>
+            </span>
+        </div>
+        <!-- 登录-->
+        <div id="modal" class="modal " data-backdrop="static" data-show="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content main-modal ">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body clearfix">
+                        <div class="modal-l pull-left">
+                           <h1 class="logo"></h1>
+                            <p>Ghost中文网</p>
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="邮箱/用户名">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="密码">
+                                </div>
+                                <div class="form-group" style="line-height: 40px;">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"style="position: static" >记住我
+                                        </label>
+                                        <a href="#">忘记密码</a>
+                                        <a href="#" class="btn btn-primary pull-right">登录</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-r pull-right">
+                            <h4>第三方账号登录</h4>
+                            <a href="#"><img src="img/27.png"></a>
+                            <a href="#"><img src="img/26.png"></a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <span>还没有账号?</span>
+                        <a href="#">立即注册</a>  •
+                        <a href="#">游客访问</a> •
+                        <a href="#">问答阅读</a> •
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="big-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-12">
+                <div class="faxian collapse navbar-collapse">
+                    <h4 class="glyphicon glyphicon-list ">发现</h4>
+                    <ul class="nav nav-tabs navbar-right ul-right collapse navbar-collapse">
+                        <li class="current"><a href="#n1" data-toggle="tab">最新</a></li>
+                        <li><a href="#n2" data-toggle="tab">推荐</a></li>
+                        <li><a href="#n3" data-toggle="tab">热门</a></li>
+                        <li><a href="#n4" data-toggle="tab">等待回复</a></li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="main-media tab-pane fade in active " id="n1">
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/9.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">局域网内怎么访问Ghost?</a></h4>
+                                    <div class="media-icon pull-right ">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • <strong>SenLief</strong>回复了问题 • 2 人关注 • 1 个回复 • 318 次浏览 • 2017-05-04 23:36</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">Ghost中文网主题可以开源出来吗？感觉这个主题非常好看</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">主题/模板</a>
+                                        • 		<strong>喜欢你的笑</strong>回复了问题 • 2 人关注 • 2 个回复 • 1406 次浏览 • 2017-04-17 18:11</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">ghost能不能自带支持评论功能啊，多说要关了。。。。。</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">主题/模板</a>
+                                        • 		<strong> yufan </strong>回复了问题 • 2 人关注 • 1 个回复 • 619 次浏览 • 2017-04-14 22:04</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">首页跟后台都可以用域名打开,但是登录后台提示拒绝访问url</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • <strong> SenLief</strong>回复了问题 • 2 人关注 • 1 个回复 • 441 次浏览 • 2017-04-11 15:04</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/9.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">如何能判断要显示的页面是否为静态页面</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">主题/模板 </a>
+                                        • 	<strong>SenLief</strong>回复了问题 • 2 人关注 • 1 个回复 • 264 次浏览 • 2017-04-11 14:59</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/11.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">gho 安装出错</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>Lemon_95</strong>回复了问题 • 3 人关注 • 3 个回复 • 842 次浏览 • 2017-04-09 19:26</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/12.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">ghost备份时怎么有2个primary呢？</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • <strong>ruheshejiok</strong>发起了问题 • 1 人关注 • 0 个回复 • 206 次浏览 • 2017-04-03 10:22</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">请问 Ghost 中文版还打算继续维护吗？</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>王赛 </strong> 回复了问题 • 4 人关注 • 2 个回复 • 1973 次浏览 • 2017-03-10 10:52</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/13.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">一直安装困难 请给个一键安装包吧</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>雨后清晨</strong>回复了问题 • 12 人关注 • 12 个回复 • 2440 次浏览 • 2017-03-10 09:38</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">启动报数据库错误,如图,请问怎么解决</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >回复</span>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>桐</strong>发起了问题 • 1 人关注 • 0 个回复 • 354 次浏览 • 2017-03-07 17:13</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">mysql</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">主题/模板</a>
+                                        • <strong>Xianmingyuan</strong>回复了问题 • 2 人关注 • 1 个回复 • 359 次浏览 • 2017-03-06 12:14</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/14.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">ghost启动的时候报了这个错是怎么回事？</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>WellJohn</strong>回复了问题 • 2 人关注 • 1 个回复 • 439 次浏览 • 2017-02-24 23:24</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">中文版0.7.4FULL可用，英文版现0.11.3一个安装报错，求分析</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>哥哥</strong>回复了问题 • 3 人关注 • 2 个回复 • 928 次浏览 • 2017-02-19 18:29</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/15.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">求Ghost中文网的主题，或者类似的都可以</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">主题/模板</a>
+                                        • <strong> Hitvz</strong>回复了问题 • 2 人关注 • 1 个回复 • 1057 次浏览 • 2017-02-19 16:52</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/13.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">windows 安装ghost 遇到了在命令行下输入命令报错的问题</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • <strong>dream</strong>发起了问题 • 1 人关注 • 0 个回复 • 414 次浏览 • 2017-02-17 19:34</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">Ghost如何去除商业水印</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>mike</strong>回复了问题 • 3 人关注 • 1 个回复 • 1464 次浏览 • 2017-01-05 18:23</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/16.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">123123</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>原来是康哥</strong>回复了问题 • 1 人关注 • 1 个回复 • 596 次浏览 • 2017-01-02 17:13</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/17.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">如何从SQLite迁移到MySQL？</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>Duncan</strong>回复了问题 • 2 人关注 • 1 个回复 • 842 次浏览 • 2016-12-29 09:57</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/18.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">上传图片到七牛，链接路径的后缀能使用文件名吗？？</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>breath</strong>回复了问题 • 4 人关注 • 4 个回复 • 1875 次浏览 • 2016-12-28 09:27</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/19.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">怎么获得包含xxtag的所有文章。</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">主题/模板</a>
+                                        • 	<strong> lurenb</strong>发起了问题 • 1 人关注 • 0 个回复 • 672 次浏览 • 2016-12-10 10:59</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-group pull-right">
+                            <ul class="pagination">
+                                <li class="active"><a href="">1</a></li>
+                                <li ><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href=""> > </a></li>
+                                <li><a href=""> >> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-media tab-pane fade" id="n2">
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/20.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">Ghost 0.6.2 中文版正式发布了 | Ghost 中文网</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • <strong>王赛</strong>发起了问题 • 1 人关注 • 0 个回复 • 1667 次浏览 • 2015-04-27 11:50</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-media tab-pane fade" id="n3">
+                        <div class="mediaAll tabs">
+                            <ul>
+                                <li><a href="#">30天</a></li>
+                                <li><a href="#">7天</a></li>
+                                <li><a href="#">当天</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-media tab-pane fade" id="n4">
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/9.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">局域网内怎么访问Ghost?</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 									<strong>SenLief</strong>回复了问题 • 2 人关注 • 1 个回复 • 318 次浏览 • 2017-05-04 23:36</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">Ghost中文网主题可以开源出来吗？感觉这个主题非常好看</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">主题/模板</a>
+                                        • 		<strong>喜欢你的笑</strong>回复了问题 • 2 人关注 • 2 个回复 • 1406 次浏览 • 2017-04-17 18:11</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">ghost能不能自带支持评论功能啊，多说要关了。。。。。</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">主题/模板</a>
+                                        • 		<strong> yufan </strong>回复了问题 • 2 人关注 • 1 个回复 • 619 次浏览 • 2017-04-14 22:04</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">首页跟后台都可以用域名打开,但是登录后台提示拒绝访问url</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • <strong> SenLief</strong>回复了问题 • 2 人关注 • 1 个回复 • 441 次浏览 • 2017-04-11 15:04</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/9.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">如何能判断要显示的页面是否为静态页面</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">主题/模板 </a>
+                                        • 	<strong>SenLief</strong>回复了问题 • 2 人关注 • 1 个回复 • 264 次浏览 • 2017-04-11 14:59</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/11.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">gho 安装出错</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>Lemon_95</strong>回复了问题 • 3 人关注 • 3 个回复 • 842 次浏览 • 2017-04-09 19:26</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/12.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">ghost备份时怎么有2个primary呢？</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • <strong>ruheshejiok</strong>发起了问题 • 1 人关注 • 0 个回复 • 206 次浏览 • 2017-04-03 10:22</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">请问 Ghost 中文版还打算继续维护吗？</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>王赛 </strong> 回复了问题 • 4 人关注 • 2 个回复 • 1973 次浏览 • 2017-03-10 10:52</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/13.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">一直安装困难 请给个一键安装包吧</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>雨后清晨</strong>回复了问题 • 12 人关注 • 12 个回复 • 2440 次浏览 • 2017-03-10 09:38</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">启动报数据库错误,如图,请问怎么解决</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >回复</span>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>桐</strong>发起了问题 • 1 人关注 • 0 个回复 • 354 次浏览 • 2017-03-07 17:13</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">mysql</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">主题/模板</a>
+                                        • <strong>Xianmingyuan</strong>回复了问题 • 2 人关注 • 1 个回复 • 359 次浏览 • 2017-03-06 12:14</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/14.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">ghost启动的时候报了这个错是怎么回事？</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>WellJohn</strong>回复了问题 • 2 人关注 • 1 个回复 • 439 次浏览 • 2017-02-24 23:24</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">中文版0.7.4FULL可用，英文版现0.11.3一个安装报错，求分析</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>哥哥</strong>回复了问题 • 3 人关注 • 2 个回复 • 928 次浏览 • 2017-02-19 18:29</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/15.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">求Ghost中文网的主题，或者类似的都可以</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">主题/模板</a>
+                                        • <strong> Hitvz</strong>回复了问题 • 2 人关注 • 1 个回复 • 1057 次浏览 • 2017-02-19 16:52</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/13.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">windows 安装ghost 遇到了在命令行下输入命令报错的问题</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • <strong>dream</strong>发起了问题 • 1 人关注 • 0 个回复 • 414 次浏览 • 2017-02-17 19:34</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/10.png" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">Ghost如何去除商业水印</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>mike</strong>回复了问题 • 3 人关注 • 1 个回复 • 1464 次浏览 • 2017-01-05 18:23</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/16.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">123123</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>原来是康哥</strong>回复了问题 • 1 人关注 • 1 个回复 • 596 次浏览 • 2017-01-02 17:13</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/17.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">如何从SQLite迁移到MySQL？</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>Duncan</strong>回复了问题 • 2 人关注 • 1 个回复 • 842 次浏览 • 2016-12-29 09:57</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/18.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">上传图片到七牛，链接路径的后缀能使用文件名吗？？</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">默认分类</a>
+                                        • 	<strong>breath</strong>回复了问题 • 4 人关注 • 4 个回复 • 1875 次浏览 • 2016-12-28 09:27</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mediaAll">
+                            <div class="media">
+                                <a class="media-left">
+                                    <img src="img/19.jpg" class="media-object">
+                                </a>
+                                <div class="media-body">
+                                    <h4><a href="#">怎么获得包含xxtag的所有文章。</a></h4>
+                                    <div class="media-icon pull-right">
+                                        <span >贡献</span>
+                                        <a href="#" class="glyphicon glyphicon-user"></a>
+                                    </div>
+                                    <p><a href="#" class="">主题/模板</a>
+                                        • 	<strong> lurenb</strong>发起了问题 • 1 人关注 • 0 个回复 • 672 次浏览 • 2016-12-10 10:59</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-group pull-right">
+                            <ul class="pagination">
+                                <li class="active"><a href="">1</a></li>
+                                <li ><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href=""> > </a></li>
+                                <li><a href=""> >> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="top-right">
+                    <h5 class="pull-left">热门话题</h5>
+                    <a href="#" class="pull-right">更多></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="bottom-right">
+                    <div class="mod-heade clearfix" >
+                        <h5 class="pull-left">热门用户</h5>
+                        <a href="#" class="pull-right">更多></a>
+                    </div>
+                    <div class="mod-body">
+                        <div class="media">
+                            <a class="media-left">
+                                <img src="img/21.jpg" class="media-object">
+                            </a>
+                            <div class="media-body">
+                                <h4><a href="#">北国</a></h4>
+                                <p>0 个问题, 0 次赞同</p>
+
+                            </div>
+
+                        </div>
+                        <div class="media">
+                            <a class="media-left">
+                                <img src="img/22.jpg" class="media-object">
+                            </a>
+                            <div class="media-body">
+                                <h4><a href="#">Xianmingyuan</a></h4>
+                                <p>1 个问题, 0 次赞同</p>
+
+                            </div>
+
+                        </div>
+                        <div class="media">
+                            <a class="media-left">
+                                <img src="img/10.png" class="media-object">
+                            </a>
+                            <div class="media-body">
+                                <h4><a href="#">china_skag</a></h4>
+                                <p>0 个问题, 0 次赞同</p>
+
+                            </div>
+
+                        </div>
+                        <div class="media">
+                            <a class="media-left">
+                                <img src="img/23.jpg" class="media-object">
+                            </a>
+                            <div class="media-body">
+                                <h4><a href="#">夜弥</a></h4>
+                                <p>0 个问题, 0 次赞同</p>
+
+                            </div>
+
+                        </div>
+                        <div class="media">
+                            <a class="media-left">
+                                <img src="img/10.png" class="media-object">
+                            </a>
+                            <div class="media-body">
+                                <h4><a href="#">caizx2012</a></h4>
+                                <p>0 个问题, 0 次赞同</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copy-footer">
+    <p>Copyright © 2017<span> - 京ICP备11008151号, All Rights Reserved</span></p>
+</div>
+<div class="TOP">
+    <a href="#" class="glyphicon glyphicon-chevron-up"></a>
+</div>
+
+</body>
+</html>
